@@ -198,6 +198,7 @@ h3 {
 .row {
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
 }
 
 .album {
@@ -218,6 +219,11 @@ h3 {
 #subtitle {
   font-size: 12px;
   color: #aeaeae;
+  margin-bottom: 20px;
+}
+
+#round {
+  border-radius: 50%;
 }
 
 /* ------------------------------------- */
