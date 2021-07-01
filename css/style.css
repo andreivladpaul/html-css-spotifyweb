@@ -7,16 +7,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
-a {
-  text-decoration: none;
-  color: #aeaeae;
-}
-
-li {
-  list-style: none;
-}
-
 /* ------------------------------ */
 /* DEBUG  */
 .debug {
@@ -37,6 +27,22 @@ li {
   color: #aeaeae;
 }
 
+a {
+  text-decoration: none;
+  color: #aeaeae;
+}
+
+a:hover {
+  color: white;
+}
+
+i:hover {
+  color: white;
+}
+li {
+  list-style: none;
+}
+
 /* ------------------------------------- */
 /* NAVIGAZIONE LATERALE  */
 .nav {
@@ -44,7 +50,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
   width: 250px;
-  height: calc(100% - 80px);
+  height: calc(100% - 90px);
   float: left;
   background-color: black;
   overflow: hidden;
@@ -157,6 +163,10 @@ h3 {
   margin-right: 10px;
 }
 
+.btn-upgrade:hover {
+  transform: scale(1.05);
+}
+
 .btn-upgrade a {
   padding: 10px;
 }
@@ -208,12 +218,40 @@ h3 {
   margin-right: 30px;
 }
 
+.image {
+  position: relative;
+  width: 150px;
+}
+
 .album img {
   width: 150px;
 }
 
 .album h3 {
   max-width: 150px;
+}
+
+.hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.582);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.hover-effect:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hover-effect i {
+  color: white;
+  font-size: 40px;
 }
 
 #subtitle {
@@ -231,11 +269,12 @@ h3 {
 footer.player {
   position: absolute;
   bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 80px;
+  height: 90px;
   background-color: #181818;
   border-top: 1px solid #282828;
   z-index: 4;
@@ -261,6 +300,11 @@ footer.player {
   font-size: 12px;
 }
 
+#song-name:hover {
+  text-decoration: underline white;
+  color: white;
+  cursor: pointer;
+}
 .song,
 .right {
   flex: 1;
@@ -283,11 +327,15 @@ footer.player {
 
 .progress {
   background-color: #aeaeae;
-
   height: 5px;
   border-radius: 2rem;
   position: relative;
   overflow: hidden;
+}
+
+.progress:hover {
+  background-color: #1db954;
+  cursor: pointer;
 }
 
 .song-progress {
