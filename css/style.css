@@ -132,10 +132,99 @@ h3 {
 .space {
   margin-right: 20px;
 }
+/* ------------------------------------- */
+/* MEDIA  */
+.media {
+  background-color: #141922;
+  float: right;
+  width: calc(100% - 250px);
+  height: auto;
+}
+
+.upgrade {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  background-color: #080b12;
+}
+
+.btn-upgrade {
+  display: flex;
+  border-radius: 2em;
+  border: 1px solid white;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn-upgrade a {
+  padding: 10px;
+}
+
+.nav-media {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-media ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-media a {
+  margin-right: 30px;
+}
+/* ------------------------------------- */
+.albums {
+  width: 100%;
+  padding: 10px;
+}
+
+.recent-play {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.albums h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.album img {
+  width: 150px;
+}
+
+.album h3 {
+  max-width: 150px;
+}
+
+#subtitle {
+  font-size: 12px;
+  color: #aeaeae;
+}
 
 /* ------------------------------------- */
 /* PLAYER  */
 footer.player {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -145,6 +234,7 @@ footer.player {
   border-top: 1px solid #282828;
   z-index: 4;
   padding: 10px;
+  overflow: hidden;
 }
 .align-center {
   display: flex;
