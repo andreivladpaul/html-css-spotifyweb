@@ -18,23 +18,39 @@
 
         <!-- NAV LATERALE PRINCIPALE -->
         <section class="nav">
-            <!-- NAV LATERALE  -->
-            <div class="nav-lat">
+            <div class="nav-top">
+                <!-- LOGO  -->
                 <div class="logo">
                     <a href="#">
-                    <img src="img/logo.svg" alt="spotify-logo">
+                        <img src="img/logo.svg" alt="spotify-logo">
                     </a>
+                </div>
+
+                <div class="logo-hidden">
+                    <img id="img-hidden" src="img/logo-small.svg" alt="">
                 </div>
 
                 <div class="home-cerca-libreria">
                     <ul>
-                        <li> <a href="#"> <i class=" icons fas fa-home"></i> Home</a> 
+                        <li> <a href="#"><img id="menu-icons" src="img/home.svg" alt=""> <span>Home</span> </a> 
                         </li>
-                        <li> <a href="#"> <i class="icons fas fa-search"></i> Cerca</a> 
+                        <li> <a href="#"><img id="menu-icons" src="img/search.svg" alt=""> <span>Cerca</span> </a> 
                         </li>
-                        <li> <a href="#"> <i class="icons fas fa-align-left"></i> La tua libreria</a> 
+                        <li> <a href="#"><img id="menu-icons" src="img/libreria.svg" alt=""> <span>La tua libreria</span> </a> 
                         </li>
                     </ul>
+                </div>
+
+                <div class="home-cerca-libreria-hidden">
+                    <ul>
+                        <li> <a href="#"><img id="menu-icons" src="img/home.svg" alt=""></a> 
+                        </li>
+                        <li> <a href="#"><img id="menu-icons" src="img/search.svg" alt=""> </a> 
+                        </li>
+                        <li> <a href="#"><img id="menu-icons" src="img/libreria.svg" alt=""> </a> 
+                        </li>
+                    </ul>
+
                 </div>
 
                 <div class="playlist">
@@ -43,7 +59,11 @@
                         <li> <h3>PLYALIST</h3> </li>
                         <li> <a id="add-playlist" href="#"> <i class="icons fas fa-plus-square"></i> Crea Playlist</a> 
                         </li>
+                    </ul>
+                </div> 
         
+                <div class="new-playlist">
+                    <ul>
                         <li> <a href="#"> Nome Playlist</a> 
                         </li>
                         <li> <a href="#"> Nome Playlist</a> 
@@ -59,13 +79,14 @@
                         <li> <a href="#"> Nome Playlist</a> 
                         </li>
                     </ul>
-                
-                </div> 
+                </div>
             </div>
+
 
             <div class="utente">
                 <div class="install">
-                    <span> <i class="far fa-arrow-alt-circle-down"></i> <a href="#">Install app</a></span>
+                    <a href="#"> <span> <i class="far fa-arrow-alt-circle-down"></i> Install app 
+                    </span> </a>
                 </div>
 
                 <div class="utente-pic">
@@ -74,6 +95,11 @@
 
                 </div>
             </div>
+
+            <div class="utente-pic-hidden">
+                <img src="img/profile.svg" alt="">
+            </div>
+
         </section>
         <!--FINE NAV LATERALE PRINCIPALE -->
         <!-- --------------------------------------------------------- -->
@@ -110,7 +136,7 @@
                                 <img src="img/metal_lifting.jpg" alt="">
 
                                 <div class="hover-effect">
-                                    <i class="icons space far fa-play-circle"></i>
+                                    <i class="icons far fa-play-circle"></i>
                                 </div>
                             </div>
                             <h3>Heavy Metal</h3>
@@ -121,7 +147,7 @@
                                 <img src="img/stranger.jpeg" alt="">
 
                                 <div class="hover-effect">
-                                    <i class="icons space far fa-play-circle"></i>
+                                    <i class="icons far fa-play-circle"></i>
                                 </div>
                             </div>
                             <h3>Stramge Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
@@ -132,7 +158,7 @@
                                 <img src="img/aquietplace.jpeg" alt="">
 
                                 <div class="hover-effect">
-                                    <i class="icons space far fa-play-circle"></i>
+                                    <i class="icons far fa-play-circle"></i>
                                 </div>
                             </div>
                             <h3>A quiet place</h3>
@@ -143,7 +169,7 @@
                                 <img src="img/split.jpeg" alt="">
 
                                 <div class="hover-effect">
-                                    <i class="icons space far fa-play-circle"></i>
+                                    <i class="icons far fa-play-circle"></i>
                                 </div>
                             </div>
                             <h3>Split</h3>
@@ -154,7 +180,7 @@
                                 <img src="img/cure.jpeg" alt="">
 
                                 <div class="hover-effect">
-                                    <i class="icons space far fa-play-circle"></i>
+                                    <i class="icons far fa-play-circle"></i>
                                 </div>
                             </div>
                             <h3>A cure for wellness</h3>
@@ -165,7 +191,7 @@
                                 <img src="img/sinister.jpeg" alt="">
 
                                 <div class="hover-effect">
-                                    <i class="icons space far fa-play-circle"></i>
+                                    <i class="icons far fa-play-circle"></i>
                                 </div>
                             </div>
                             <h3>Sinister</h3>
@@ -189,7 +215,7 @@
                                 <img src="img/radar.jpeg" alt="">
 
                                 <div class="hover-effect">
-                                    <i class="icons space far fa-play-circle"></i>
+                                    <i class="icons far fa-play-circle"></i>
                                 </div>
                             </div>
                             <h3>Release Radar</h3>
@@ -203,7 +229,7 @@
                                 <img src="img/mixdaily.jpeg" alt="">
 
                                 <div class="hover-effect">
-                                    <i class="icons space far fa-play-circle"></i>
+                                    <i class="icons far fa-play-circle"></i>
                                 </div>
                             </div>
                             <h3>Daily Mix 1</h3>
@@ -215,7 +241,7 @@
 
             </section>
 
-            <!-- <section class="albums">
+            <section class="albums">
                 <div class="play">
                     <h2>Artisti più popolari</h2>
                     <p id="subtitle">
@@ -224,13 +250,27 @@
 
                     <div class="row">
                         <div class="album">
-                            <img id="round" src="img/youg.jpeg" alt="">
+                        
+                            <div class="image">
+                                <img id="round" src="img/youg.jpeg" alt="">
+
+                                <div id="round" class="hover-effect ">
+                                    <i class="icons far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3>Youg</h3>
                             <p id="subtitle">Subtitle</p>
                             
                         </div>
                         <div class="album">
-                            <img id="round" src="img/einaudi.jpeg" alt="">
+                            
+                            <div class="image">
+                                <img id="round" src="img/einaudi.jpeg" alt="">
+
+                                <div id="round" class="hover-effect">
+                                    <i class="icons far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3>Einaudi</h3>
                             <p id="subtitle">Subtitle</p>
                             
@@ -238,7 +278,7 @@
                         
                     </div>
                 </div>
-            </section> -->
+            </section> 
         
 
         </section>
@@ -260,7 +300,7 @@
                     <i class=" far fa-folder"></i>
                 </div>
             </div>
-<!-- --------------------------------------------------------- -->
+            <!-- --------------------------------------------------------- -->
              <div class="play-pause  align-center">
                 <div class="btn align-center">
                     <a href="#"><i class="icons space fas fa-random"></i></a>
@@ -279,7 +319,7 @@
                     <div class="end">4:35</div>
                 </div>
             </div> 
-<!-- --------------------------------------------------------- -->
+            <!-- --------------------------------------------------------- -->
             <div class="right align-center  ">
                 <i class="icons fas fa-list-ul"></i>
                 <i class="icons fas fa-desktop"></i>
@@ -290,13 +330,6 @@
 
         </footer>
         <!-- --------------------------------------------------------- -->
-
-
-
-
-
-
-
     </div>
 </body>
 
