@@ -23,9 +23,7 @@ body {
 }
 
 .icons {
-  font-size: 24px;
-  font-weight: 600;
-  padding-right: 10px;
+  font-size: 20px;
   color: #aeaeae;
 }
 
@@ -35,6 +33,10 @@ a {
 }
 
 a:hover {
+  color: white;
+}
+
+li a:active {
   color: white;
 }
 
@@ -73,10 +75,6 @@ li:hover {
   font-size: 12px;
 }
 
-.home-cerca-libreria a:active {
-  border-left: 3px solid green;
-}
-
 /* ------------------------------------- */
 /*LOGO  */
 
@@ -104,6 +102,10 @@ li:hover {
   padding-right: 20px;
 }
 
+.home-cerca-libreria a:hover {
+  border-left: 3px solid green;
+}
+
 .new-playlist {
   height: 80%;
   overflow-y: auto;
@@ -129,6 +131,7 @@ h3 {
 
 .fa-plus-square {
   font-size: 40px;
+  margin-right: 10px;
 }
 
 .install {
@@ -251,16 +254,29 @@ h3 {
 .nav-media ul {
   font-size: 12px;
   line-height: 35px;
-}
-
-.nav-media ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-#menu-icons {
+.nav-media a {
+  position: relative;
+}
+
+.nav-media .active-page:after {
+  background-color: green;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 50px;
+}
+
+.menu-icons {
   width: 26px;
   margin-right: 5px;
   vertical-align: middle;
@@ -407,6 +423,10 @@ footer.player {
   flex: 2;
 }
 
+.play-pause .fa-play-circle {
+  font-size: 30px;
+}
+
 .btn {
   width: 100%;
   display: flex;
@@ -439,11 +459,6 @@ footer.player {
   background-color: rgb(66, 65, 65);
   position: absolute;
   left: 10%;
-}
-
-.fa-play-circle {
-  font-size: 30px;
-  padding: 0 10px;
 }
 
 .time {
